@@ -1,48 +1,71 @@
 import React from 'react'
-import {Row, Col} from 'react-bootstrap';
 
 const User = () => {
   return (
-    <Row style={{marginTop:'50px'}}>
-      
-      <Col xs={5} style={{textAlign:'center'}}>
-        <img src="https://znews-photo.zadn.vn/w660/Uploaded/bpmoqwq1/2014_10_16/con_meo.jpg" alt="" style={{width:'300px'}}/>
-      </Col>
-      <Col xs={7} style={{display:'flex',justifyContent:'center',flexDirection:'column'}}>
-        <Row>
-          <Col xs={3}>
-            <b>Username</b>
-          </Col>
-          <Col>
-            Dung
-          </Col>
-        </Row>
-        <Row>
-          <Col xs={3}>
-            <b>Email</b>
-          </Col>
-          <Col>
-            dungbk10t@gmai.com
-          </Col>
-        </Row>
-        <Row>
-          <Col xs={3}>
-            <b>Point</b>
-          </Col>
-          <Col>
-            1500
-          </Col>
-        </Row>
-        <Row>
-          <Col xs={3}>
-            <b>Class</b>
-          </Col>
-          <Col>
-            1
-          </Col>
-        </Row>
-      </Col>
-    </Row>    
+    <div className="container bootstrap snippets bootdey pt-5 pb-5">
+    <div className="card-body inf-content">
+        <div className="row">
+            <div className="col-md-4">
+                <img alt="" style={{width:`600px`}} title="" className="rounded-circle img-thumbnail isTooltip" src="https://bootdey.com/img/Content/avatar/avatar7.png" data-original-title="Usuario" /> 
+            </div>
+            <div className="col-md-6">
+                <strong>Information</strong><br/>
+                <div className="table-responsive">
+                <table className="table table-user-information">
+                    <tbody>
+                        <tr>        
+                            <td>
+                                <strong>
+                                    <span className="glyphicon glyphicon-asterisk text-primary"></span>
+                                    Username                                               
+                                </strong>
+                            </td>
+                            <td className="text-primary">
+                                tuandung     
+                            </td>
+                        </tr>
+                        <tr>    
+                            <td>
+                                <strong>
+                                    <span className="glyphicon glyphicon-user  text-primary"></span>    
+                                    Email                                              
+                                </strong>
+                            </td>
+                            <td className="text-primary">
+                                tuandung@gmail.com  
+                            </td>
+                        </tr>
+                        <tr>        
+                            <td>
+                                <strong>
+                                    <span className="glyphicon glyphicon-cloud text-primary"></span>  
+                                    Point                                               
+                                </strong>
+                            </td>
+                            <td className="text-primary">
+                                1500
+                            </td>
+                        </tr>
+
+                        <tr>        
+                            <td>
+                                <strong>
+                                    <span className="glyphicon glyphicon-bookmark text-primary"></span> 
+                                    Class                                               
+                                </strong>
+                            </td>
+                            <td className="text-primary">
+                                A
+                            </td>
+                        </tr>               
+                    </tbody>
+                </table>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>                                        
   )
-}
+};
+
 export default User;
