@@ -41,7 +41,7 @@ const Header = () => {
                             <NavDropdown 
                                 title={
                                     <Image 
-                                        src={`https://sohanews.sohacdn.com/2020/2/26/photo-1-158270587240769675748.jpg`} 
+                                        src={`https://bootdey.com/img/Content/avatar/avatar7.png`} 
                                         roundedCircle 
                                         style={{height: '45px', width: '50px'}}
                                     />
