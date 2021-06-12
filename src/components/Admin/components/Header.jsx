@@ -19,7 +19,7 @@ const Header = () => {
                         Logo
                     </Col>
                     <Col md={1} xs={1}>
-                        <Link to="/" style={{textDecoration: 'none'}}>Home</Link>
+                        <Link to="/" style={{textDecoration: 'none'}}>ホーム</Link>
                     </Col>
                     <Col md={8} xs={6}>
                         <div className="input-group border rounded-pill p-1" style={{width: '65%'}}>

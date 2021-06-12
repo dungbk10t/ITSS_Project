@@ -1,15 +1,44 @@
-import React from 'react'
+import React from 'react';
+import { makeStyles } from '@material-ui/core/styles';
+import Button from '@material-ui/core/Button';
 
+
+const useStyles = makeStyles((theme) => ({
+    root: {
+      '& > *': {
+        margin: theme.spacing(1),
+      },
+    },
+    input: {
+      display: 'none',
+    },
+}));
 const User = () => {
+  const classes = useStyles();
   return (
     <div className="container bootstrap snippets bootdey pt-5 pb-5">
     <div className="card-body inf-content">
         <div className="row">
             <div className="col-md-4">
                 <img alt="" style={{width:`600px`}} title="" className="rounded-circle img-thumbnail isTooltip" src="https://bootdey.com/img/Content/avatar/avatar7.png" data-original-title="Usuario" /> 
+                <div className={classes.root}>
+                <input
+                    accept="image/*"
+                    className={classes.input}
+                    id="contained-button-file"
+                    multiple
+                    type="file"
+                />
+                <label htmlFor="contained-button-file">
+                    <Button variant="contained" color="primary" component="span">
+                    アップロード
+                    </Button>
+                </label>
+                </div>
             </div>
+            
             <div className="col-md-6">
-                <strong>Information</strong><br/>
+                <strong>情報</strong><br/>
                 <div className="table-responsive">
                 <table className="table table-user-information">
                     <tbody>
@@ -17,7 +46,7 @@ const User = () => {
                             <td>
                                 <strong>
                                     <span className="glyphicon glyphicon-asterisk text-primary"></span>
-                                    Username                                               
+                                    ユーザネーム                                               
                                 </strong>
                             </td>
                             <td className="text-primary">
@@ -28,7 +57,7 @@ const User = () => {
                             <td>
                                 <strong>
                                     <span className="glyphicon glyphicon-user  text-primary"></span>    
-                                    Email                                              
+                                    イーメール                                            
                                 </strong>
                             </td>
                             <td className="text-primary">
@@ -39,7 +68,7 @@ const User = () => {
                             <td>
                                 <strong>
                                     <span className="glyphicon glyphicon-cloud text-primary"></span>  
-                                    Point                                               
+                                    ポイント                                             
                                 </strong>
                             </td>
                             <td className="text-primary">
@@ -51,7 +80,7 @@ const User = () => {
                             <td>
                                 <strong>
                                     <span className="glyphicon glyphicon-bookmark text-primary"></span> 
-                                    Class                                               
+                                    クラース                                              
                                 </strong>
                             </td>
                             <td className="text-primary">
